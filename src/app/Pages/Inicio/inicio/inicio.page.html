@@ -1,0 +1,27 @@
+
+<ion-content class="ion-padding"  >
+  
+<ion-item >
+  <ion-label  color="primary" class="ion-text-center">Usuario</ion-label>
+</ion-item>
+  <ion-item>
+    <ion-input  [(ngModel)]="usuarioIntroducido.nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" class="ion-text-center">Contraseña</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="usuarioIntroducido.password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-checkbox color="primary" slot="start"></ion-checkbox>
+    <ion-label><p style="font-size: 12px; text-align: center;" >Recordar Usuario</p> </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button class="ion-text-center" expand="block" (click)="iniciarSesion()" >Iniciar Sesión</ion-button>
+  </ion-item>
+  <ion-item >
+    <a style="text-align: center;" ion-router-link href="registro" color="tertiary">Registrarse</a>
+  
+  </ion-item>
+</ion-content>
